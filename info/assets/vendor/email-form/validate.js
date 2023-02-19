@@ -26,7 +26,8 @@
     var params = {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
-      message: document.getElementById("message").value
+      message: document.getElementById("message").value,
+      subject: document.getElementById("subject").value
     };
   
     const serviceID = "service_p601fv9";
@@ -38,6 +39,7 @@
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("message").value = "";
+          document.getElementById("subject").value = "";
           console.log(res);
           thisForm.querySelector('.loading').classList.remove('d-block');
           thisForm.querySelector('.sent-message').classList.add('d-block');
