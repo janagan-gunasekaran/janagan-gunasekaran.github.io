@@ -412,9 +412,15 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
-  font-weight: 700;
-  font-size: 26px;
-  color: #728394;
+  font-weight: 600;
+  font-size: 23px;
+  color: #0563bb;
+}
+
+.about .content p, ul li{
+ font-family: "Open Sans", sans-serif;
+ font-weight: 500;
+ font-size: 16px;
 }
 
 .about .content ul {
