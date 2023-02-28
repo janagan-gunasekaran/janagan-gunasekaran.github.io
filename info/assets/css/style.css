@@ -525,16 +525,19 @@ section {
 } */
 
 .skills ul i{
-  font-size: 5rem;
+  font-size: 4.2rem;
   text-align: center;
   padding: 30px;
 }
+
 .skills ul p{
   text-align: center;
 }
+
 .skills ul .bx{
   line-height: 0px;
 }
+
 .skills ul .bi{
   font-size: 3.8rem;
 }
