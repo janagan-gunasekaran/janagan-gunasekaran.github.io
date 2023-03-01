@@ -420,7 +420,7 @@ section {
 .about .content p, ul li{
  font-family: "Open Sans", sans-serif;
  font-weight: 500;
- font-size: 16px;
+ font-size: 18px;
 }
 
 .about .content ul {
@@ -448,12 +448,13 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
 .about img{
   border-radius: 50%;
 }
 
 .about .content{
-  padding: 22px;
+  padding: 17px;
   padding-top: 3.5rem;
 }
 
