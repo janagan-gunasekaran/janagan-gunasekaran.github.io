@@ -11483,7 +11483,8 @@ pre {
 
 .header .container .infos .title {
   margin-bottom: 0px;
-  font-size: 74px;
+  margin-left: 0px;
+  font-size: 55px;
   font-weight: bold;
 }
 
@@ -11533,7 +11534,7 @@ pre {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .header .container .infos {
+  .header .container .infos{
     margin-top: 0;
   }
   .header .container .img-holder {
@@ -11650,7 +11651,6 @@ pre {
 # Interests
 --------------------------------------------------------------*/
 .interests .icon-box {
-  display: flex;
   align-items: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
@@ -11659,7 +11659,6 @@ pre {
 
 .interests .icon-box i {
   font-size: 32px;
-  padding-right: 10px;
   line-height: 1;
 }
 
@@ -11700,7 +11699,7 @@ pre {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: #495057;
   margin-bottom: 10px;
 }
 
@@ -11733,8 +11732,8 @@ pre {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: #f4f5f3;
+  border: 2px solid #707572;
 }
 
 /*--------------------------------------------------------------
@@ -11796,8 +11795,8 @@ pre {
 }
 
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: #ff7a57;
+  border-color: #ff7a57;
 }
 
 .services .icon-box:hover .icon {
@@ -11812,9 +11811,11 @@ pre {
   background: #35e888;
 }
 
-.services .icon-box:hover h4 a,
+.services .icon-box:hover h4, a{
+  color: #fff;
+}
 .services .icon-box:hover p {
-  color: #000000;
+  color: #fff;
 }
 
 
@@ -11881,4 +11882,22 @@ pre {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+
+#projects img{
+  max-height: 250px;
+  object-fit: contain;
+}
+
+#awards h5, p{
+  font-size: medium;
+}
+
+#awards .card-text{
+  padding: 5px 20px 5px 20px;
+}
+
+#certifications .card-text{
+  padding: 5px 20px 5px 20px;
 }
