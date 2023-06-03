@@ -43,43 +43,39 @@
     <!-- End of page navibation -->
 
     <!-- Page Header -->
-    <header class="header" id="project1">
+
+    <section id="portfolio-details" class="portfolio-details">
         <div class="container">
-            <section id="portfolio-details" class="portfolio-details">
-                <div class="container">
+            <div class="row">
+                    <div class="portfolio-info">
+                        <h3>Data Platform</h3>
+                        <ul>
+                            <li><strong>Project Role</strong>: Developer</li>
+                            <li><strong>Project date</strong>: 2015 - 2017</li>
+                            <li><strong>Project Specific Skills</strong>: Python, Django, Mongo dB, Postgres, AWS,
+                                Angular,
+                                Redshift
+                            </li>
+                            <!-- <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="portfolio-description">
+                        <h2>Description</h2>
+                        <p>
+                            Terabytes of data migration from Amazon S3 and Mongo DB in SQL
+                            Quarriable format to Amazon Redshift. This helps the analyst folks to do there
+                            data collection part. The Architecture involves importing real time source data
+                            using Spark streaming into S3. Once the file lands at S3 a message is populated
+                            in AWS SQS and an event is triggered which parses and cleans the files using
+                            Python. The parsed data is then dumped into snowflake and Redshift and an
+                            email is then sent to client using SES.
 
-                    <div class="row gy-4">
-                        <div class="col">
-                            <div class="portfolio-info">
-                                <h3>Data Platform</h3>
-                                <ul>
-                                    <li><strong>Project Role</strong>: Developer</li>
-                                    <li><strong>Project date</strong>: 2015 - 2017</li>
-                                    <li><strong>Project Specific Skills</strong>: Python, Django, Mongo dB, Postgres, AWS, Angular, 
-                                        Redshift
-                                    </li>
-                                    <!-- <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li> -->
-                                </ul>
-                            </div>
-                            <div class="portfolio-description">
-                                <h2>Description</h2>
-                                <p>
-                                    Terabytes of data migration from Amazon S3 and Mongo DB in SQL 
-                                    Quarriable format to Amazon Redshift. This helps the analyst folks to do there 
-                                    data collection part. The Architecture involves importing real time source data 
-                                    using Spark streaming into S3. Once the file lands at S3 a message is populated 
-                                    in AWS SQS and an event is triggered which parses and cleans the files using 
-                                    Python. The parsed data is then dumped into snowflake and Redshift and an 
-                                    email is then sent to client using SES.
-
-                                </p>
-                            </div>
-                        </div>
+                        </p>
                     </div>
                 </div>
-            </section>
-        </div>
-    </header>
+            </div>
+    </section>
+
     <!-- End of Page Header -->
 
     <!-- Page Footer -->
@@ -95,7 +91,6 @@
                 <div class="col-sm-6">
                     <div class="socials">
                         <a class="social-item" href="javascript:void(0)"><i class="ti-facebook"></i></a>
-                        <a class="social-item" href="javascript:void(0)"><i class="ti-google"></i></a>
                         <a class="social-item" href="javascript:void(0)"><i class="ti-github"></i></a>
                         <a class="social-item" href="javascript:void(0)"><i class="ti-twitter"></i></a>
                     </div>

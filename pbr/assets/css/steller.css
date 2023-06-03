@@ -11823,29 +11823,9 @@ pre {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-  padding-top: 40px;
+  margin-top: 100px;
 }
 
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #b8a07e;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
-}
 
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -11883,7 +11863,6 @@ pre {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
 
 #projects img{
   max-height: 250px;
