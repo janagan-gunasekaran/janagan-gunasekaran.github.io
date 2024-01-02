@@ -699,18 +699,27 @@
                 <div class="form">
                     <h6 class="subtitle">Available 24/7</h6>
                     <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
+                    <form method="post" role="form" class="php-email-form">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <input type="text" name="name" class="form-control" id="name" 
+                                placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Password" required>
+                            <input type="email" class="form-control" name="email" id="email" 
+                                placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control"
+                            <input type="text" class="form-control" name="subject" id="subject" 
+                                placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="contact-message" id="message" cols="30" rows="5" class="form-control"
                                 placeholder="Message"></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
                     </form>
@@ -770,6 +779,9 @@
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <!-- EmailJS -->
+    <script src="assets/vendors/email-form/validate.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <!-- steller js -->
     <script src="assets/js/steller.js"></script>
