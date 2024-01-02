@@ -30,7 +30,7 @@
       subject: document.getElementById("subject").value
     };
   
-    const serviceID = "service_p601fv9";
+    const serviceID = "service_oldo742";
     const templateID = "template_fo79xvi";
   
       emailjs.init("jW_9pGQpRlHNOTDOl");
