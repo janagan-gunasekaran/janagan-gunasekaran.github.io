@@ -1,11 +1,13 @@
 import json
 from tableschema import Table
 
-errors = []
-def exc_handler(exc, row_number=None, row_data=None, error_data=None):
-    errors.append((row_number, exc.errors, error_data))
 
 def validate_csv_line_by_line(csv_file_path, schema_file_path):
+    def exc_handler(exc, row_number=None, row_data=None, error_data=None):
+        errors.append((row_number, exc.errors, error_data))
+
+    errors = []
+
     with open(schema_file_path) as f:
         schema = json.load(f)
     table_ = Table(csv_file_path, schema=schema)

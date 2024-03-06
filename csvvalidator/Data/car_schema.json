@@ -1,0 +1,117 @@
+{
+    "fields": [
+        {
+            "name": "year",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "make",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "model",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "trim",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "body",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "transmission",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "vin",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "state",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "condition",
+            "type": "integer",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "odometer",
+            "type": "integer",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "color",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "interior",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "seller",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "mmr",
+            "type": "integer",
+            "constraints":{
+                "required": true,
+                "minimum": 20
+            }
+        },
+        {
+            "name": "sellingprice",
+            "type": "integer",
+            "constraints":{
+                "required": true
+            }
+        },
+        {
+            "name": "saledate",
+            "type": "string",
+            "constraints":{
+                "required": true
+            }
+        }
+    ]
+}

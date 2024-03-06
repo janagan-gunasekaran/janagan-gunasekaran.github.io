@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-import pandas as pd
 import os
 from validate import validate_csv_line_by_line
 app = Flask(__name__)
@@ -25,6 +24,8 @@ def upload_file():
             csv_file_path = os.path.join(data_folder, csv_filename)
             csv_file.save(csv_file_path)
             errors, row_count = validate_csv_line_by_line(csv_file_path, schema_file_path)
+            print(errors)
+            print(len(errors))
             if errors:
                 return render_template('validator.html', errors=errors, error_count=len(errors), line_count=row_count)
         except Exception as err:
