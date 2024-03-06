@@ -13,9 +13,3 @@ def validate_csv_line_by_line(csv_file_path, schema_file_path):
     for _ in table_.iter(exc_handler=exc_handler):
         row_count = row_count + 1
     return errors, row_count
-
-csv_file_path = "Data/car_prices3.csv"
-schema_file_path = "Data/car_schema.json"
-
-# Validate the CSV file line by line against the Table Schema
-validate_csv_line_by_line(csv_file_path, schema_file_path)
