@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='validator.css')}}">
+  <title>CSV Lint Validator</title>
+</head>
+<body>
+  <div class="header">
+    <h1>CSV Lint is the easiest / no coding required yet most secure CSV file validation service on the internet, it specializes in validating large size CSV files against user-defined validation rules / schemas efficiently and securely.</h1>
+  </div>
+
+  <div class="stats">
+    <div>Total Errors Detected: {{error_count}}</div>
+    <div>Current File Rows: {{line_count}}</div>
+  </div>
+
+  <div class="file-upload">
+    <form method="POST" enctype="multipart/form-data">
+        <label for="csv-file-upload">Upload CSV file:</label>
+        <input type="file" id="csv-file-upload" name="csv-file">
+        <label for="schema-file-upload">Upload Schema file:</label>
+        <input type="file" id="schema-file-upload" name="schema-file">
+        <input type="submit" value="Upload">
+    </form>
+    {% if message %}
+      <div class="error">{{ message }}</div>
+    {% endif %}
+  </div>
+
+  <div class="results">
+    <h2>Validation Results</h2>
+    <table>
+      <tr>
+        <th>Row</th>
+        <th>What's My Data?</th>
+        <th>What's Wrong With It?</th>
+      </tr>
+      {% if errors %}
+        {% for error in errors %}
+          <tr>
+            <td>{{ error[0] }}</td>
+            <td>{{ error[1] }}</td>
+            <td>{{ error[2] }}</td>
+          </tr>
+        {% endfor %}
+      {% endif %}
+    </table>
+  </div>
+</body>
+</html>

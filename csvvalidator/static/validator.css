@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .header {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+
+  .stats div {
+    background-color: #F1F1F1;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .file-upload {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .results {
+    margin-top: 20px;
+  }
+
+  .results table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .results th, .results td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .results tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+.error {
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
