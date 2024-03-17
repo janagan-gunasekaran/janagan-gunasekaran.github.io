@@ -4,7 +4,8 @@
             "name": "year",
             "type": "string",
             "constraints":{
-                "required": true
+                "required": true,
+                "maxLength": 4
             }
         },
         {
